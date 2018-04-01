@@ -21,10 +21,10 @@ import java.util.regex.Pattern;
  */
 public class App {
 
-	public static final int MAX_CONSUMER_THREADS = 20;					// Default to 20 per requirements
-	public static final String DEFAULT_URLS_FILE = "urls.txt";			// The input file contains the URLs
-	public static final String REGEX = "\\b(today|outside|more)\\b";	// Your search term(s) here
-	public static final String RESULTS_FILE = "results.txt";			// The output file contains match counts
+	public static final int MAX_CONSUMER_THREADS = 20;
+	public static final String DEFAULT_URLS_FILE = "urls.txt";
+	public static final String REGEX = "\\b(today|outside|more)\\b";
+	public static final String RESULTS_FILE = "results.txt";
 
 	public static BlockingQueue<String> queue;
 	public static Pattern searchPattern;
@@ -39,10 +39,10 @@ public class App {
 		System.out.println("------------------------------------------------------");
 		System.out.println("Starting program with regex: " + REGEX);
 		
-		LoadResourceFile();			// Reads urls.txt records into a vector
-		CompileSearchPattern();		// Compile our search regex pattern
-		CreateQueue();				// Fill our BlockingQueue with the URLs
-		RunScrapers(latch);			// Populate the queue and start the consumer threads!
+		LoadResourceFile();
+		CompileSearchPattern();
+		CreateQueue();
+		RunScrapers(latch);
 		
 		System.out.println("Threads are working, hold tight...");
 		try { 
