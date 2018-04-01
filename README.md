@@ -12,13 +12,20 @@ Maven
 JRE 1.8+
 ```
 
+### Binary distribution
+
+For convenience I uploaded sitesearcher.jar to my Drive:
+
+```
+https://drive.google.com/open?id=1NGXvtRAAgVaLagP-lTmebb9sW2QOc-Ll
+```
+
 Steps to compile and run the program :
 1. Download the git project
 2. Run maven install
 3. The resulting executable jar file is /target/sitesearcher.jar
 4. To run the jar file cd to jar directory and issue:  java -jar ./sitesearcher.jar
-
-The output file results.txt
+5. The output is written to results.txt in the working directory
 
 Sample output:
 ```
