@@ -14,7 +14,7 @@ JRE 1.8+
 
 ### Binary distribution
 
-For convenience I sitesearcher.jar vile on my Drive:
+For convenience I uploaded sitesearcher.jar to my Drive:
 
 ```
 https://drive.google.com/open?id=1NGXvtRAAgVaLagP-lTmebb9sW2QOc-Ll
